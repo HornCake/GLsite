@@ -1,5 +1,6 @@
 <template>
   <div>
+    <OHeader />
     <main>
       <NuxtPage />
       <ATopScrollButtton />
@@ -8,3 +9,9 @@
 </template>
 
 <script setup lang="ts"></script>
+
+<style scoped lang="scss">
+  main {
+    padding-top: 80px;
+  }
+</style>
