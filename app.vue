@@ -1,6 +1,9 @@
 <template>
   <div>
-    <NuxtPage />
+    <main>
+      <NuxtPage />
+      <ATopScrollButtton />
+    </main>
   </div>
 </template>
 
