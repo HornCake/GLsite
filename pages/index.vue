@@ -5,6 +5,7 @@
     <OSubmissions />
     <OAboutJudge />
     <OPrizes />
+    <OCautions />
   </article>
 </template>
 
