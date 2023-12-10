@@ -2,6 +2,7 @@
   <article>
     <OTheme />
     <ORequirements />
+    <OSubmissions />
   </article>
 </template>
 
