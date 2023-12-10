@@ -3,6 +3,7 @@
     <OTheme />
     <ORequirements />
     <OSubmissions />
+    <OAboutJudge />
   </article>
 </template>
 
