@@ -1,5 +1,6 @@
 <template>
   <article>
+    <OTheme />
     <ORequirements />
   </article>
 </template>
