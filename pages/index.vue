@@ -4,6 +4,7 @@
     <ORequirements />
     <OSubmissions />
     <OAboutJudge />
+    <OPrizes />
   </article>
 </template>
 
