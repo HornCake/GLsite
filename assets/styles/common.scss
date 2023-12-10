@@ -1,3 +1,17 @@
+::selection {
+  background-color: rgba($dull, 0.3);
+}
+
+html,
+body {
+  margin: 0;
+  background-color: $white;
+  color: $text_black;
+
+  overscroll-behavior: none;
+  -webkit-user-drag: none;
+}
+
 article > section {
   margin-inline: 20%;
   &:not(.no-line)::after {
@@ -6,7 +20,10 @@ article > section {
     width: 80%;
     height: 1px;
     background-color: $black;
-    margin: 150px auto;
+    margin: 180px auto;
+  }
+  &.no-line {
+    margin-bottom: 120px;
   }
 }
 
@@ -16,9 +33,22 @@ ul,
 li {
   font-weight: 300;
 }
-
+h1,
+h2,
+h3 {
+  // font-family: "Futura", "Noto Sans JP", sans-serif;
+}
+h1 {
+  font-size: 60px;
+  text-align: center;
+  width: max-content;
+  margin: 0px auto 60px auto;
+  color: $white;
+  text-shadow: 0px 5px 5px rgba($black, 0.15);
+}
 h2 {
   font-size: 28px;
+  text-align: center;
   width: max-content;
   margin: 0px auto 120px auto;
   &::after {
@@ -85,6 +115,6 @@ li {
     height: 6px;
     border: 2px solid $dark;
     box-sizing: border-box;
-    transform: translate(-10px, calc(0.75em - 3px));
+    transform: translate(-15px, calc(0.75em - 3px));
   }
 }
