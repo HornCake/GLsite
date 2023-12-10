@@ -20,7 +20,7 @@ li {
 h2 {
   font-size: 28px;
   width: max-content;
-  margin: 0px auto 80px auto;
+  margin: 0px auto 120px auto;
   &::after {
     content: "";
     display: block;
@@ -35,7 +35,7 @@ h3 {
   font-size: 24px;
   width: max-content;
   padding-right: 10px;
-  margin-top: 60px;
+  margin-top: 70px;
   background: linear-gradient(to top, transparent 0%, $sub 0%, $sub 40%, transparent 40%);
   &::after {
     content: "";
@@ -68,12 +68,15 @@ b {
   font-weight: 500;
 }
 ul {
+  position: relative;
   list-style: none;
   margin-left: 10px;
   padding-left: 2.5em;
 }
 li {
-  line-height: 1.5em;
+  font-size: 17px;
+  line-height: 1.55em;
+  padding-block: 7px;
   &::before {
     content: "";
     position: absolute;
