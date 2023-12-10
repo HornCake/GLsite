@@ -7,6 +7,7 @@
     <OAboutJudge />
     <OPrizes />
     <OCautions />
+    <OEntry />
   </article>
 </template>
 
