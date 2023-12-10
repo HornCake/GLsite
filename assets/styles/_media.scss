@@ -1,0 +1,27 @@
+$bp-sp-tab: 600px;
+$bp-tab-pc: 810px;
+@mixin pc {
+  @media (min-width: ($bp-tab-pc + 0.02px)) {
+    @content;
+  }
+}
+@mixin notpc {
+  @media (max-width: ($bp-tab-pc)) {
+    @content;
+  }
+}
+@mixin tab {
+  @media (min-width: ($bp-sp-tab + 0.02px)) and (max-width: ($bp-tab-pc)) {
+    @content;
+  }
+}
+@mixin notsp {
+  @media (min-width: ($bp-sp-tab + 0.02px)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: ($bp-sp-tab)) {
+    @content;
+  }
+}
