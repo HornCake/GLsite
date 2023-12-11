@@ -2,6 +2,10 @@
   background-color: rgba($dull, 0.3);
 }
 
+.en {
+  font-family: "Futura", "Noto Sans JP", sans-serif;
+}
+
 html,
 body {
   margin: 0;
@@ -13,17 +17,32 @@ body {
 }
 
 article > section {
-  margin-inline: 20%;
+  @include pc {
+    margin-inline: 20%;
+  }
+  @include notpc {
+    margin-inline: 7.5%;
+  }
   &:not(.no-line)::after {
     content: "";
     display: block;
     width: 80%;
-    height: 1px;
-    background-color: $black;
-    margin: 180px auto;
+    @include pc {
+      margin: 180px auto;
+      border-bottom: 1px solid $black;
+    }
+    @include notpc {
+      margin: 100px auto;
+      border-bottom: 0.75px solid $black;
+    }
   }
   &.no-line {
-    margin-bottom: 120px;
+    @include pc {
+      margin-bottom: 120px;
+    }
+    @include notpc {
+      margin-bottom: 80px;
+    }
   }
 }
 
@@ -39,33 +58,50 @@ h3 {
   // font-family: "Futura", "Noto Sans JP", sans-serif;
 }
 h1 {
-  font-size: 60px;
   text-align: center;
   width: max-content;
-  margin: 0px auto 60px auto;
   color: $white;
   text-shadow: 0px 5px 5px rgba($black, 0.15);
+  @include pc {
+    font-size: 60px;
+    margin: 0px auto 60px auto;
+  }
+  @include notpc {
+    font-size: 30px;
+    margin: 0px auto 60px auto;
+  }
 }
 h2 {
-  font-size: 28px;
   text-align: center;
   width: max-content;
-  margin: 0px auto 120px auto;
   &::after {
     content: "";
     display: block;
-    width: 100px;
-    height: 6px;
     background-color: $main;
     margin-inline: auto;
-    transform: translate(0, 30px);
+    @include pc {
+      width: 100px;
+      height: 6px;
+      transform: translate(0, 30px);
+    }
+    @include notpc {
+      width: 80px;
+      height: 4.5px;
+      transform: translate(0, 25px);
+    }
+  }
+  @include pc {
+    font-size: 28px;
+    margin: 0px auto 120px auto;
+  }
+  @include notpc {
+    font-size: 24px;
+    margin: 0px auto 80px auto;
   }
 }
 h3 {
-  font-size: 24px;
   width: max-content;
   padding-right: 10px;
-  margin-top: 70px;
   background: linear-gradient(to top, transparent 0%, $sub 0%, $sub 40%, transparent 40%);
   &::after {
     content: "";
@@ -75,16 +111,39 @@ h3 {
     background-color: $main;
     transform: translate(35px, 0);
   }
+  @include pc {
+    font-size: 24px;
+    margin-top: 70px;
+  }
+  @include notpc {
+    font-size: 20px;
+    margin-top: 60px;
+  }
 }
 p {
-  font-size: 17px;
-  margin-left: 10px;
-  line-height: 1.55em;
+  @include pc {
+    font-size: 17px;
+    line-height: 1.55em;
+    margin-left: 10px;
+  }
+  @include notpc {
+    font-size: 15px;
+    line-height: 1.7em;
+    margin-left: 6px;
+  }
   &.note {
     padding-left: 1.5em;
-    font-size: 14px;
     text-indent: -1.2em;
     margin-block: 5px;
+
+    @include pc {
+      font-size: 14px;
+      line-height: 1.55em;
+    }
+    @include notpc {
+      font-size: 13px;
+      line-height: 1.7em;
+    }
     &::before {
       content: "※";
       color: $dark;
@@ -101,12 +160,26 @@ ul {
   position: relative;
   list-style: none;
   margin-left: 10px;
-  padding-left: 2.5em;
+  @include pc {
+    margin-left: 10px;
+    padding-left: 2.5em;
+  }
+  @include notpc {
+    margin-left: 6px;
+    padding-left: 2em;
+  }
 }
 li {
-  font-size: 17px;
-  line-height: 1.55em;
-  padding-block: 7px;
+  @include pc {
+    font-size: 17px;
+    line-height: 1.55em;
+    padding-block: 7px;
+  }
+  @include notpc {
+    font-size: 15px;
+    line-height: 1.7em;
+    padding-block: 5px;
+  }
   &::before {
     content: "";
     position: absolute;
