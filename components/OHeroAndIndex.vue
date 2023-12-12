@@ -1,36 +1,35 @@
 <template>
-  <section class="hero no-line">
-    <div class="boxes">
-      <div class="box box1"></div>
-      <div class="box box2"></div>
-    </div>
-    <h1>GL Competition 2023</h1>
+  <section class="y-bg no-line">
+    <MCrossLines />
+    <MWhiteBoxes />
+    <div class="slogan">叫べ、一年。</div>
+
+    <section class="hero"></section>
+    <h1 class="en">GL Competition 2023</h1>
   </section>
 </template>
 
 <script setup lang="ts"></script>
 
 <style scoped lang="scss">
-  .boxes {
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
-  }
-  .box {
-    background-color: $white;
-    &.box1 {
-      width: 30vw;
-      height: 6vw;
-    }
-    &.box2 {
-      width: 15vw;
-      height: 4vw;
-    }
-  }
-
-  .hero {
+  .y-bg {
+    position: relative;
     margin-inline: 0;
     width: 100vw;
 
+    height: calc(200svh - 80px);
     background-color: $main;
-    height: 200vh;
+    overflow: hidden;
+  }
+  .hero {
+    height: calc(100svh - 80px);
+  }
+  .slogan {
+    position: absolute;
+    z-index: 11;
+    top: max(29vw, min(39vw, 100svh - 80px - 26vw));
+    right: 6vw;
+    font-size: 120px;
+    font-weight: 500;
   }
 </style>
