@@ -1,5 +1,6 @@
 <template>
   <header>
+    <MHamburgerMenu :active="menuActive" @close="toggle()" />
     <div>
       <NuxtLink class="top" to="/">
         <img src="@/assets/images/logo/small.svg" alt="ロゴ" />
@@ -9,6 +10,7 @@
         <NuxtLink class="about-us none-on-sp" to="/about-us">団体について</NuxtLink>
         <a class="ig-logo media-icon none-on-sp" href="https://www.instagram.com/_groundlevel_/" target="_blank" rel="noopener noreferrer"></a>
         <a class="x-logo media-icon none-on-sp" href="https://twitter.com/ground_level_" target="_blank" rel="noopener noreferrer"></a>
+        <AHamburgerButton @click="toggle()" :active="menuActive" />
       </div>
     </div>
   </header>
