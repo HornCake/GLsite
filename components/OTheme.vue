@@ -1,8 +1,9 @@
 <template>
   <section>
-    <h2>募集テーマ</h2>
+    <h2>課題文</h2>
     <section>
-      <div class="theme">GROUND LEVEL</div>
+      <div class="subtitle en">THEME</div>
+      <div class="theme en">「GROUND LEVEL」</div>
       <p>第1回のテーマは「GROUND LEVEL」です。グラウンドレベルから構想される建築はどのように描かれるでしょうか。</p>
       <p>
         「グラウンドレベル」は、断面詳細図などで示される、標準地盤面の位置あるいは高さです。建築物を建築する際には様々な作業の基準となり、比喩としてスタート地点、物事の原点（グラウンドゼロ）と解釈してもよいでしょう。
