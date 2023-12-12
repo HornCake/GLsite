@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2>応募</h2>
+    <AScrollAnchorHeading text="応募" />
     <section>
       <p>応募要項をご確認の上、下のボタンよりエントリーフォームを記入してください。</p>
     </section>

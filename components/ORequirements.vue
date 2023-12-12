@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2>応募要項</h2>
+    <AScrollAnchorHeading text="応募要項" />
     <section>
       <h3>応募資格</h3>
       <p>

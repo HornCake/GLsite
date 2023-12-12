@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2>注意事項</h2>
+    <AScrollAnchorHeading text="注意事項" />
     <section>
       <ul>
         <li>一次審査応募作品は一次審査終了後公式サイトにて結果発表も兼ねて審査委員のコメントとともに公開します。</li>
