@@ -22,6 +22,6 @@
 
 <style scoped lang="scss">
   main {
-    padding-top: 80px;
+    padding-top: $header-height;
   }
 </style>

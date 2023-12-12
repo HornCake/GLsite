@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2>賞・副賞</h2>
+    <AScrollAnchorHeading text="賞・副賞" />
     <section>
       <div class="prizes">
         <div v-for="prize in prizes" :key="prize.name" class="prize">

@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2>審査について</h2>
+    <AScrollAnchorHeading text="審査について" />
     <MTabContent>
       <template #first>
         <p>一次審査は上の「審査委員」の項に記載されている5名の審査委員により、公開二次審査に進む15作品を決定します。一次審査通過者には個別に連絡し、二次審査の詳細について説明します。</p>

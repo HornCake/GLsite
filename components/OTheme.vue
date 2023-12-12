@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2>課題文</h2>
+    <AScrollAnchorHeading text="課題文" />
     <section>
       <div class="subtitle en">THEME</div>
       <div class="theme en">「GROUND LEVEL」</div>
