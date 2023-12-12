@@ -146,7 +146,7 @@ p {
     }
     &::before {
       content: "※";
-      color: $dark;
+      color: $text_yellow;
       margin-right: 0.2em;
     }
   }
@@ -186,7 +186,7 @@ li {
     display: inline-block;
     width: 6px;
     height: 6px;
-    border: 2px solid $dark;
+    border: 2px solid $text_yellow;
     box-sizing: border-box;
     transform: translate(-15px, calc(0.75em - 3px));
   }
