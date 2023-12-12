@@ -1,0 +1,193 @@
+::selection {
+  background-color: rgba($dull, 0.3);
+}
+
+.en {
+  font-family: "Futura", "Noto Sans JP", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  background-color: $white;
+  color: $text_black;
+
+  overscroll-behavior: none;
+  -webkit-user-drag: none;
+}
+
+article > section {
+  @include pc {
+    margin-inline: 20%;
+  }
+  @include notpc {
+    margin-inline: 7.5%;
+  }
+  &:not(.no-line)::after {
+    content: "";
+    display: block;
+    width: 80%;
+    @include pc {
+      margin: 180px auto;
+      border-bottom: 1px solid $black;
+    }
+    @include notpc {
+      margin: 100px auto;
+      border-bottom: 0.75px solid $black;
+    }
+  }
+  &.no-line {
+    @include pc {
+      margin-bottom: 120px;
+    }
+    @include notpc {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+p,
+a,
+ul,
+li {
+  font-weight: 300;
+}
+h1,
+h2,
+h3 {
+  // font-family: "Futura", "Noto Sans JP", sans-serif;
+}
+h1 {
+  text-align: center;
+  width: max-content;
+  color: $white;
+  text-shadow: 0px 5px 5px rgba($black, 0.15);
+  @include pc {
+    font-size: 60px;
+    margin: 0px auto 60px auto;
+  }
+  @include notpc {
+    font-size: 30px;
+    margin: 0px auto 60px auto;
+  }
+}
+h2 {
+  text-align: center;
+  width: max-content;
+  &::after {
+    content: "";
+    display: block;
+    background-color: $main;
+    margin-inline: auto;
+    @include pc {
+      width: 100px;
+      height: 6px;
+      transform: translate(0, 30px);
+    }
+    @include notpc {
+      width: 80px;
+      height: 4.5px;
+      transform: translate(0, 25px);
+    }
+  }
+  @include pc {
+    font-size: 28px;
+    margin: 0px auto 120px auto;
+  }
+  @include notpc {
+    font-size: 24px;
+    margin: 0px auto 80px auto;
+  }
+}
+h3 {
+  width: max-content;
+  padding-right: 10px;
+  background: linear-gradient(to top, transparent 0%, $sub 0%, $sub 40%, transparent 40%);
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: $main;
+    transform: translate(35px, 0);
+  }
+  @include pc {
+    font-size: 24px;
+    margin-top: 70px;
+  }
+  @include notpc {
+    font-size: 20px;
+    margin-top: 60px;
+  }
+}
+p {
+  @include pc {
+    font-size: 17px;
+    line-height: 1.55em;
+    margin-left: 10px;
+  }
+  @include notpc {
+    font-size: 15px;
+    line-height: 1.7em;
+    margin-left: 6px;
+  }
+  &.note {
+    padding-left: 1.5em;
+    text-indent: -1.2em;
+    margin-block: 5px;
+
+    @include pc {
+      font-size: 14px;
+      line-height: 1.55em;
+    }
+    @include notpc {
+      font-size: 13px;
+      line-height: 1.7em;
+    }
+    &::before {
+      content: "※";
+      color: $text_yellow;
+      margin-right: 0.2em;
+    }
+  }
+}
+
+b {
+  background: linear-gradient(transparent 55%, rgba($sub, 0.8) 0%);
+  font-weight: 500;
+}
+ul {
+  position: relative;
+  list-style: none;
+  margin-left: 10px;
+  @include pc {
+    margin-left: 10px;
+    padding-left: 2.5em;
+  }
+  @include notpc {
+    margin-left: 6px;
+    padding-left: 2em;
+  }
+}
+li {
+  @include pc {
+    font-size: 17px;
+    line-height: 1.55em;
+    padding-block: 7px;
+  }
+  @include notpc {
+    font-size: 15px;
+    line-height: 1.7em;
+    padding-block: 5px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border: 2px solid $text_yellow;
+    box-sizing: border-box;
+    transform: translate(-15px, calc(0.75em - 3px));
+  }
+}
