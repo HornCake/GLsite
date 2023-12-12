@@ -8,5 +8,7 @@ export const setScrollData = (key: string, element: HTMLElement | null) => {
   }
 };
 export const scrollToEle = (key: string) => {
-  window.scrollTo({ top: scrollData[key], behavior: "smooth" });
+  setTimeout(() => {
+    window.scrollTo({ top: scrollData[key], behavior: "smooth" });
+  }, 10);
 };
