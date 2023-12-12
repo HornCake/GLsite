@@ -30,15 +30,25 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 120%;
-    margin-left: -10%;
     margin-bottom: 60px;
+    @include pc {
+      margin-left: -10%;
+      width: 120%;
+    }
+    @include sp {
+      width: 100%;
+    }
   }
   .prize {
     display: grid;
     grid-template: ". content ." / 1fr auto 1fr;
     width: 160px;
-    margin-bottom: 60px;
+    @include pc {
+      margin-bottom: 60px;
+    }
+    @include notpc {
+      margin-bottom: 40px;
+    }
     > div {
       grid-area: content;
       > h3 {

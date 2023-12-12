@@ -17,11 +17,36 @@
 
 <style scoped lang="scss">
   h2 {
-    margin-bottom: 80px;
+    @include pc {
+      margin-bottom: 80px;
+    }
+    @include notpc {
+      margin-bottom: 50px;
+    }
+  }
+  .subtitle {
+    color: $text_yellow;
+    text-align: center;
+    @include pc {
+      font-size: 16px;
+      line-height: 18px;
+    }
+    @include notpc {
+      font-size: 14px;
+      line-height: 14px;
+    }
   }
   .theme {
-    font-size: 45px;
     text-align: center;
-    margin-bottom: 70px;
+    @include pc {
+      font-size: 45px;
+      line-height: 55px;
+      margin-bottom: 70px;
+    }
+    @include notpc {
+      font-size: 30px;
+      line-height: 35px;
+      margin-bottom: 50px;
+    }
   }
 </style>

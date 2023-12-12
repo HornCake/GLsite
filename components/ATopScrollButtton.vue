@@ -18,10 +18,20 @@
   .button {
     cursor: pointer;
     position: fixed;
-    right: 100px;
-    bottom: 50px;
+    z-index: 1000;
     width: 50px;
     height: 60px;
+    @include pc {
+      right: 100px;
+      bottom: 50px;
+    }
+    @include notpc {
+      transform-origin: bottom right;
+      transform: scale(0.8);
+
+      right: 50px;
+      bottom: 30px;
+    }
   }
   .arrow {
     width: 30px;
