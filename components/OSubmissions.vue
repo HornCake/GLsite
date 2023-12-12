@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2>提出物について</h2>
+    <AScrollAnchorHeading text="提出物について" />
     <MTabContent>
       <template #first>
         <p>下記の項目に従い、登録番号が記載されたメールにある「一次審査提出フォーム」に必要事項を入力た上で提出してください。</p>
