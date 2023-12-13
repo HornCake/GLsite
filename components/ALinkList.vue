@@ -9,11 +9,18 @@
     text-decoration: none;
     display: block;
     color: $text_white;
-    font-size: 20px;
-    height: 30px;
-    line-height: 30px;
     padding-left: 10px;
     transition: color 0.3s;
+    @include notsp {
+      font-size: 20px;
+      height: 30px;
+      line-height: 30px;
+    }
+    @include sp {
+      font-size: 16px;
+      height: 26px;
+      line-height: 26px;
+    }
 
     &::before {
       content: "";
@@ -32,8 +39,10 @@
       width: 100%;
       border-bottom: 0.1px solid $text_white;
       transform-origin: left center;
-      transform: scale(0, 1);
       transition: transform 0.3s;
+      @include notsp {
+        transform: scale(0, 1);
+      }
     }
     &:hover {
       color: $sub;
