@@ -66,7 +66,7 @@
   @keyframes slogan-1 {
     0% {
       opacity: 0;
-      transform: translate(0, -50px);
+      transform: translate(0, -3vw);
     }
     100% {
       opacity: 1;
@@ -76,7 +76,7 @@
   @keyframes slogan-2 {
     0% {
       opacity: 0;
-      transform: translate(0, 50px);
+      transform: translate(0, 3vw);
     }
     100% {
       opacity: 1;
