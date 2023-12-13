@@ -20,6 +20,9 @@
 
   const onClick = (str: string) => {
     scrollToEle(str);
+    if (window.innerWidth <= 600) {
+      emits("close");
+    }
   };
 </script>
 
