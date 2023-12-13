@@ -1,8 +1,8 @@
 <template>
   <section class="y-bg no-line">
-    <MCrossLines />
-    <MWhiteBoxes />
     <div class="slogan">叫べ、一年。</div>
+    <ACrossLines />
+    <AWhiteBoxes />
 
     <section class="hero"></section>
     <h1 class="en">GL Competition 2023</h1>
