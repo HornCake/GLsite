@@ -3,8 +3,8 @@
     <MHamburgerMenu :active="menuActive" @close="toggle()" />
     <div>
       <NuxtLink class="top" to="/">
-        <img src="@/assets/images/logo/small.svg" alt="ロゴ" />
-        <div>GL competition 2023</div>
+        <img class="logo-img" src="@/assets/images/logo/small.svg" alt="ロゴ" />
+        <img class="logo-type" src="@/assets/images/logo/type.svg" alt="ロゴタイプ" />
       </NuxtLink>
       <div>
         <NuxtLink class="about-us none-on-sp" to="/about-us">団体について</NuxtLink>
@@ -46,30 +46,47 @@
   .top {
     display: flex;
     width: max-content;
-    margin: 15px 0 0 15px;
     text-decoration: none;
     color: $text_white;
     transition: transform 0.3s;
-    > img {
-      height: 40px;
-      width: 40px;
-      border-radius: 20px;
-      background-color: $main;
+    @include notsp {
+      margin: 15px 0 0 15px;
     }
-    > div {
-      width: 180px;
-      margin-left: 15px;
-      line-height: 40px;
-      font-family: "Futura";
-      font-size: 18px;
+    @include sp {
+      margin: 17px 0 0 12px;
+    }
+    > .logo-img {
+      background-color: $main;
+      @include notsp {
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+      }
+      @include sp {
+        height: 36px;
+        width: 36px;
+        border-radius: 18px;
+      }
+    }
+    > .logo-type {
+      @include notsp {
+        height: 18px;
+        margin-top: 11px;
+        margin-left: 10px;
+      }
+      @include sp {
+        height: 16px;
+        margin-top: 12px;
+        margin-left: 8px;
+      }
     }
     &:hover {
       transform-origin: 50% 50%;
       transform: scale(1.02);
-      > img {
+      > .logo-img {
         filter: drop-shadow(0 0 3px rgba($main, 0.5));
       }
-      > div {
+      > .logo-type {
         filter: drop-shadow(0 0 3px rgba($text_white, 0.5));
       }
     }
