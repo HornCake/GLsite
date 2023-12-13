@@ -4,7 +4,7 @@
     <div>
       <NuxtLink class="top" to="/">
         <img src="@/assets/images/logo/small.svg" alt="ロゴ" />
-        <div>GL competition 2023</div>
+        <div>GL コンペティション 2023</div>
       </NuxtLink>
       <div>
         <NuxtLink class="about-us none-on-sp" to="/about-us">団体について</NuxtLink>
@@ -57,8 +57,8 @@
       background-color: $main;
     }
     > div {
-      width: 180px;
-      margin-left: 15px;
+      width: 230px;
+      margin-left: 12px;
       line-height: 40px;
       font-family: "Futura";
       font-size: 18px;
