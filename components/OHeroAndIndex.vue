@@ -2,25 +2,21 @@
   <section class="y-bg no-line">
     <ACrossLines />
     <AWhiteBoxes />
-    <ALogoAndLines />
-    <div class="slogan">
-      <div class="slogan-1">
-        <img class="white" src="@/assets/images/slogan_white_1.svg" alt="スローガンの影" />
-        <img src="@/assets/images/slogan_1.svg" alt="スローガン" />
-      </div>
-      <div class="slogan-2">
-        <img class="white" src="@/assets/images/slogan_white_2.svg" alt="スローガンの影" />
-        <img src="@/assets/images/slogan_2.svg" alt="スローガン" />
-      </div>
-    </div>
-    <!-- <div class="slogan">叫べ、一年。</div> -->
-
-    <section class="hero"></section>
+    <MHero />
+    <section class="index">
+      <AIndex v-for="str in list" :key="str" @click="onClick(str)">{{ str }}</AIndex>
+    </section>
     <h1 class="en">GL コンペティション 2023</h1>
   </section>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  const list = ["課題文", "応募要項", "講評者", "審査について", "賞・副賞", "注意事項", "応募", "SNSアカウント", "協賛"];
+
+  const onClick = (str: string) => {
+    scrollToEle(str);
+  };
+</script>
 
 <style scoped lang="scss">
   .y-bg {
@@ -28,69 +24,26 @@
     margin-inline: 0;
     width: 100vw;
 
-    height: calc(200svh - 80px);
+    // height: calc(200svh - 80px);
+    height: auto;
     background-color: $main;
     overflow: hidden;
   }
-  .hero {
-    height: calc(100svh - 80px);
-  }
-  .slogan {
+
+  .index {
+    position: relative;
     display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-start;
-    position: absolute;
-    z-index: 11;
-    top: max(7vw, min(17vw, 100svh - 80px - 48vw));
-    right: 16vw;
-    > div {
-      position: relative;
-      width: 13vw;
-      &.slogan-1 {
-        animation: slogan-1 1s ease-out 2.5s both;
-      }
-      &.slogan-2 {
-        animation: slogan-2 1s ease-out 3s both;
-      }
-      > img {
-        position: absolute;
-        &.white {
-          animation: slogan-white 0.5s ease-out 3.5s both;
-        }
-      }
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 18vw;
+    z-index: 9;
+    @include notsp {
+      margin-inline: 6%;
     }
-    > .slogan-2 {
-      margin-top: 13vw;
+    @include sp {
     }
   }
-  @keyframes slogan-1 {
-    0% {
-      opacity: 0;
-      transform: translate(0, -3vw);
-    }
-    100% {
-      opacity: 1;
-      transform: translate(0, 0);
-    }
-  }
-  @keyframes slogan-2 {
-    0% {
-      opacity: 0;
-      transform: translate(0, 3vw);
-    }
-    100% {
-      opacity: 1;
-      transform: translate(0, 0);
-    }
-  }
-  @keyframes slogan-white {
-    0% {
-      opacity: 0;
-      transform: translate(0, 0);
-    }
-    100% {
-      opacity: 1;
-      transform: translate(1vw, 1vw);
-    }
+  h1 {
+    margin-bottom: 200px;
   }
 </style>
