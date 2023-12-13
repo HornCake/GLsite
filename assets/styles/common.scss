@@ -191,3 +191,9 @@ li {
     transform: translate(-15px, calc(0.75em - 3px));
   }
 }
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+}
