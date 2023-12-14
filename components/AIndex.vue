@@ -76,6 +76,7 @@
     line-height: 20px;
     text-align: center;
     text-decoration: none;
+    font-weight: 600;
     @include pc {
       width: 180px;
       font-size: 20px;

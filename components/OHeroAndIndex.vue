@@ -45,5 +45,8 @@
   }
   h1 {
     margin-bottom: 200px;
+    font-family: futura-pt, dnp-shuei-gothic-kin-std, sans-serif;
+    font-style: normal;
+    font-weight: 500;
   }
 </style>

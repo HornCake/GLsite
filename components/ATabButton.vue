@@ -50,7 +50,8 @@
       line-height: 24px;
       transform: scale(0.9);
       transition: transform 0.4s;
-
+      font-family: hiragino-kaku-gothic-pron, sans-serif;
+      font-weight: 300;
       @include pc {
         font-size: 24px;
       }

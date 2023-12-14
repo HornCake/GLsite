@@ -2,9 +2,11 @@
   background-color: rgba($dull, 0.3);
 }
 
-.en {
-  font-family: "Futura", "Noto Sans JP", sans-serif;
-}
+// .en {
+//   font-family: futura-pt, sans-serif;
+//   font-style: normal;
+//   font-weight: 500;
+// }
 
 html,
 body {
@@ -50,12 +52,16 @@ p,
 a,
 ul,
 li {
-  font-weight: 300;
+  font-family: "fot-tsukuardgothic-std", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 h1,
 h2,
 h3 {
-  // font-family: "Futura", "Noto Sans JP", sans-serif;
+  font-family: hiragino-kaku-gothic-pron, sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 h1 {
   text-align: center;
