@@ -8,6 +8,7 @@
     <OPrizes />
     <OCautions />
     <OEntry />
+    <OSocialMedia />
   </article>
 </template>
 
