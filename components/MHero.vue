@@ -51,11 +51,11 @@
   }
   .scroll-box {
     position: absolute;
-    top: max(45vw, min(55vw, 100svh - 80px - 10vw));
+    top: max(45.5vw, min(55.5vw, 100svh - 80px - 9.5vw));
     z-index: 10;
     left: 25vw;
-    width: 50px;
-    height: 50px;
+    width: 3vw;
+    height: 3vw;
     transform-origin: center;
     opacity: 1;
     border: 1.5px solid $white;
@@ -67,8 +67,8 @@
       position: absolute;
       width: 50%;
       height: 50%;
-      border-right: 3px solid $white;
-      border-bottom: 3px solid $white;
+      border-right: 4px solid $white;
+      border-bottom: 4px solid $white;
       box-sizing: border-box;
       transform-origin: bottom right;
       transform: translate(0, 50%) rotate(45deg);
@@ -77,14 +77,15 @@
         scroll-arrow-loop 2s ease-in-out 6.5s infinite;
     }
     &::after {
-      content: "SCROLL";
+      content: "";
       display: block;
-      font-size: 23px;
-      color: $white;
-      font-family: "Futura";
-      margin-left: 65px;
-      line-height: 50px;
+      margin-left: 4.2vw;
+      height: calc(3vw - 3px);
+      width: 7vw;
       transform-origin: center;
+      background-image: url("@/assets/images/scroll.svg");
+      background-position: center;
+      background-repeat: no-repeat;
       animation: scroll-box 1s ease-out 4.5s both;
     }
   }
