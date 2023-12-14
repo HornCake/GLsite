@@ -3,9 +3,8 @@
     <ACrossLines />
     <AWhiteBoxes />
     <MHero />
-    <section class="index">
-      <AIndex v-for="str in list" :key="str" @click="onClick(str)">{{ str }}</AIndex>
-    </section>
+    <MIndex />
+    <MNotification />
     <h1 class="en">GL コンペティション 2023</h1>
   </section>
 </template>
@@ -30,23 +29,20 @@
     overflow: hidden;
   }
 
-  .index {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 18vw;
-    z-index: 9;
-    @include notsp {
-      margin-inline: 6%;
-    }
-    @include sp {
-    }
-  }
   h1 {
-    margin-bottom: 200px;
+    width: max-content;
+    margin: 0 auto 14vw auto;
     font-family: futura-pt, dnp-shuei-gothic-kin-std, sans-serif;
     font-style: normal;
     font-weight: 500;
+    text-align: center;
+    color: $white;
+    text-shadow: 0px 5px 5px rgba($black, 0.15);
+    @include pc {
+      font-size: 70px;
+    }
+    @include notpc {
+      font-size: 30px;
+    }
   }
 </style>

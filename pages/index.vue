@@ -1,6 +1,6 @@
 <template>
   <article>
-    <OHeroAndIndex />
+    <OYellowBack />
     <OTheme />
     <ORequirements />
     <OSubmissions />
