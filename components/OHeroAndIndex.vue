@@ -22,7 +22,7 @@
   .y-bg {
     position: relative;
     margin-inline: 0;
-    width: 100vw;
+    width: 100%;
 
     // height: calc(200svh - 80px);
     height: auto;
