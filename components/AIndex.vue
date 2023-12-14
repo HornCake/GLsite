@@ -12,15 +12,17 @@
 <style scoped lang="scss">
   .box {
     display: block;
-    margin-bottom: 60px;
     @include pc {
       width: 350px;
+      margin-bottom: 80px;
     }
     @include tab {
       width: 200px;
+      margin-bottom: 60px;
     }
     @include sp {
       width: 160px;
+      margin-bottom: 40px;
     }
   }
   .upper-lines {
@@ -79,7 +81,7 @@
     font-weight: 600;
     @include pc {
       width: 180px;
-      font-size: 20px;
+      font-size: 22px;
     }
 
     @include tab {
