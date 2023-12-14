@@ -19,7 +19,7 @@
 
 <style scoped lang="scss">
   .hero {
-    height: calc(100svh - 80px);
+    height: max(50vw, min(70vw, 100svh - 80px + 5vw));
   }
   .slogan {
     display: flex;
