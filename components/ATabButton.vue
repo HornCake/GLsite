@@ -1,6 +1,6 @@
 <template>
   <div class="button" :class="{ 'is-active': active }">
-    <span class="text">{{ text }}</span>
+    <div class="text">{{ text }}</div>
   </div>
 </template>
 
