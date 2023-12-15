@@ -22,7 +22,7 @@
       margin-bottom: 80px;
     }
     @include notpc {
-      margin-bottom: 50px;
+      margin-bottom: 60px;
     }
   }
   .subtitle {
