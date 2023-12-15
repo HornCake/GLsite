@@ -27,7 +27,6 @@
     // @ts-ignore
     img[key.replace("../assets/images/judge/", "")] = images[key].default as string;
   }
-  console.log(images);
 </script>
 
 <style scoped lang="scss">
