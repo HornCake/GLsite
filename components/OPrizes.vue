@@ -32,8 +32,8 @@
     justify-content: space-around;
     margin-bottom: 60px;
     @include pc {
-      margin-left: -10%;
-      width: 120%;
+      margin-left: -5%;
+      width: 110%;
     }
     @include sp {
       width: 100%;
@@ -42,7 +42,7 @@
   .prize {
     display: grid;
     grid-template: ". content ." / 1fr auto 1fr;
-    width: 160px;
+    width: 150px;
     @include pc {
       margin-bottom: 60px;
     }
