@@ -10,6 +10,7 @@
     <OCautions />
     <OEntry />
     <OSocialMedia />
+    <OSponsor />
   </article>
 </template>
 
