@@ -27,7 +27,7 @@ body {
 
 article > section {
   @include pc {
-    margin-inline: 20%;
+    margin-inline: max(min(20%, 50% - 350px), 50% - 500px);
   }
   @include notpc {
     margin-inline: 7.5%;
