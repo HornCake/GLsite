@@ -3,11 +3,11 @@
   <nav :class="{ closed: !active }">
     <div class="list">
       <ALinkList class="link" v-for="str in list" :key="str" to="/" @click="onClick(str)">{{ str }}</ALinkList>
-      <div class="media-icons none-on-notsp">
+      <div class="media-icons only-sp">
         <a class="ig-logo media-icon" href="https://www.instagram.com/_groundlevel_/" target="_blank" rel="noopener noreferrer"></a>
         <a class="x-logo media-icon" href="https://twitter.com/ground_level_" target="_blank" rel="noopener noreferrer"></a>
       </div>
-      <NuxtLink class="about-us none-on-notsp" to="/about-us">団体について</NuxtLink>
+      <NuxtLink class="about-us only-sp" to="/about-us">団体について</NuxtLink>
     </div>
   </nav>
 </template>
@@ -137,7 +137,7 @@
     background-image: url("@/assets/images/x_logo.svg");
     background-size: 30px;
   }
-  .none-on-notsp {
+  .only-sp {
     @include notsp {
       display: none;
     }
