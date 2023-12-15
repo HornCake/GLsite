@@ -4,6 +4,7 @@
     <OTheme />
     <ORequirements />
     <OSubmissions />
+    <OJudges />
     <OAboutJudge />
     <OPrizes />
     <OCautions />
