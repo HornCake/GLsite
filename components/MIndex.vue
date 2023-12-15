@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-  const list = ["課題文", "応募要項", "講評者", "審査について", "賞・副賞", "注意事項", "応募", "SNSアカウント", "協賛"];
+  const list = ["課題文", "応募要項", "審査委員", "審査について", "賞・副賞", "注意事項", "応募", "SNSアカウント", "協賛"];
 
   const onClick = (str: string) => {
     scrollToEle(str);
