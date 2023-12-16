@@ -25,7 +25,7 @@
     margin: 0;
     &-group {
       position: absolute;
-      z-index: 9;
+      z-index: 8;
     }
     &-1 {
       top: 0;

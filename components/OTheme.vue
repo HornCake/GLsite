@@ -2,8 +2,8 @@
   <section>
     <AScrollAnchorHeading text="課題文" />
     <section>
-      <div class="subtitle en">THEME</div>
-      <div class="theme en">「GROUND LEVEL」</div>
+      <div class="subtitle">THEME</div>
+      <div class="theme">「GROUND LEVEL」</div>
       <p>第1回のテーマは「GROUND LEVEL」です。グラウンドレベルから構想される建築はどのように描かれるでしょうか。</p>
       <p>
         「グラウンドレベル」は、断面詳細図などで示される、標準地盤面の位置あるいは高さです。建築物を建築する際には様々な作業の基準となり、比喩としてスタート地点、物事の原点（グラウンドゼロ）と解釈してもよいでしょう。
@@ -22,10 +22,14 @@
       margin-bottom: 80px;
     }
     @include notpc {
-      margin-bottom: 50px;
+      margin-bottom: 60px;
     }
   }
   .subtitle {
+    width: max-content;
+    margin-inline: auto;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
     color: $text_yellow;
     text-align: center;
     @include pc {
@@ -38,6 +42,10 @@
     }
   }
   .theme {
+    width: max-content;
+    margin-inline: auto;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
     text-align: center;
     @include pc {
       font-size: 45px;

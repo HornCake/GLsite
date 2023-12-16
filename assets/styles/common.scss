@@ -2,23 +2,34 @@
   background-color: rgba($dull, 0.3);
 }
 
-.en {
-  font-family: "Futura", "Noto Sans JP", sans-serif;
-}
+// .en {
+//   font-family: futura-pt, sans-serif;
+//   font-style: normal;
+//   font-weight: 500;
+// }
 
 html,
 body {
   margin: 0;
-  background-color: $white;
+  background-color: $background;
   color: $text_black;
+
+  overflow: hidden auto;
 
   overscroll-behavior: none;
   -webkit-user-drag: none;
+
+  // Firefoxへの対応
+  // scrollbar-width: none;
+  // //  Google Chrome、Safariへの対応
+  // &::-webkit-scrollbar {
+  //   display: none;
+  // }
 }
 
 article > section {
   @include pc {
-    margin-inline: 20%;
+    margin-inline: max(min(20%, 50% - 350px), 50% - 500px);
   }
   @include notpc {
     margin-inline: 7.5%;
@@ -50,26 +61,16 @@ p,
 a,
 ul,
 li {
-  font-weight: 300;
+  font-family: "fot-tsukuardgothic-std", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 h1,
 h2,
 h3 {
-  // font-family: "Futura", "Noto Sans JP", sans-serif;
-}
-h1 {
-  text-align: center;
-  width: max-content;
-  color: $white;
-  text-shadow: 0px 5px 5px rgba($black, 0.15);
-  @include pc {
-    font-size: 60px;
-    margin: 0px auto 60px auto;
-  }
-  @include notpc {
-    font-size: 30px;
-    margin: 0px auto 60px auto;
-  }
+  font-family: hiragino-kaku-gothic-pron, sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 h2 {
   text-align: center;
@@ -124,11 +125,13 @@ p {
   @include pc {
     font-size: 17px;
     line-height: 1.55em;
+    margin-block: 20px;
     margin-left: 10px;
   }
   @include notpc {
     font-size: 15px;
     line-height: 1.7em;
+    margin-block: 18px;
     margin-left: 6px;
   }
   &.note {
@@ -190,4 +193,17 @@ li {
     box-sizing: border-box;
     transform: translate(-15px, calc(0.75em - 3px));
   }
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+}
+
+a {
+  color: $text_yellow;
+}
+.no-wrap {
+  white-space: nowrap;
 }

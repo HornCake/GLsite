@@ -1,13 +1,20 @@
 <template>
   <article>
-    <OHeroAndIndex />
+    <OYellowBack />
     <OTheme />
     <ORequirements />
+    <ADecoration1 />
     <OSubmissions />
+    <OJudges />
+    <ADecoration2 vflip />
     <OAboutJudge />
     <OPrizes />
+    <ADecoration2 hflip />
     <OCautions />
     <OEntry />
+    <ADecoration1 vflip hflip />
+    <OSocialMedia />
+    <OSponsor />
   </article>
 </template>
 

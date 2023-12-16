@@ -1,6 +1,6 @@
 <template>
   <div class="button" :class="{ 'is-active': active }">
-    <span class="text">{{ text }}</span>
+    <div class="text">{{ text }}</div>
   </div>
 </template>
 
@@ -48,9 +48,12 @@
     > .text {
       grid-area: text;
       line-height: 24px;
+      transform-origin: center bottom;
+
       transform: scale(0.9);
       transition: transform 0.4s;
-
+      font-family: hiragino-kaku-gothic-pron, sans-serif;
+      font-weight: 300;
       @include pc {
         font-size: 24px;
       }
@@ -67,7 +70,7 @@
       }
     }
     &:not(.is-active):hover > .text {
-      transform: translate(0, -1px) scale(0.95);
+      transform: scale(0.95);
     }
   }
 </style>

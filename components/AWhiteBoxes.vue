@@ -41,9 +41,9 @@
 
 <style scoped lang="scss">
   .box {
-    background-color: $white;
+    background-color: $background;
     margin: 0;
-    border: 1px solid $white;
+    border: 1px solid $background;
     box-sizing: border-box;
     &-group {
       position: absolute;
@@ -85,7 +85,7 @@
       position: absolute;
       top: max(8vw, min(18vw, 100svh - 80px - 47vw));
       &-l {
-        top: 35vw;
+        top: 36vw;
         left: 0;
         &-1 {
           width: 10vw;
