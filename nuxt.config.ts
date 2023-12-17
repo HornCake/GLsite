@@ -11,4 +11,15 @@ export default defineNuxtConfig({
       },
     },
   },
+  app: {
+    head: {
+      meta: [
+        { name: "title", content: "GL Competition 2023" },
+        { property: "og:title", content: "GL Competition 2023" },
+        { property: "og:description", content: "GL Competition 2023の公式ウェブサイトです" },
+        { property: "og:image", content: "https://www.gl-competition.net/ogp.png" },
+        { property: "og:url", content: "https://www.gl-competition.net/" },
+      ],
+    },
+  },
 });
