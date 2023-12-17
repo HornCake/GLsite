@@ -1,8 +1,9 @@
 <template>
   <article>
+    <ADecoration1 class="deco-1" hflip />
     <h1>団体について</h1>
     <section class="no-line">
-      <ADecoration1 class="deco-1" />
+      <img src="@/assets/images/logo/main.svg" alt="▽Ground Level Logo" />
       <h3>▽Ground Level とは</h3>
       <p>▽Ground Levelは建築を学ぼうと志す全ての学部一年生に対して設計と交流の機会を企画する学生団体です。</p>
       <p>
@@ -10,8 +11,8 @@
         建築・建設業界を、そして私たち一人一人の人生を、ひとつの建築物と見立てた時、私たちは今まさにGround Levelに立っています。 ここから、あなたの思い描く未来を建築していきましょう。
       </p>
       <p>代表：圓道龍一</p>
-      <ADecoration2 class="deco-2" />
     </section>
+    <ADecoration2 class="deco-2" vflip />
   </article>
 </template>
 
@@ -46,13 +47,23 @@
       margin: 30px auto 80px auto;
     }
   }
+  img {
+    display: block;
+    width: 80%;
+    margin-inline: auto;
+    margin-bottom: 100px;
+  }
+  article {
+    position: relative;
+  }
   .deco-1 {
     position: absolute;
     right: 0;
-    top: 100px;
-    transform: translate(0px, 340px);
+    top: 300px;
   }
   .deco-2 {
-    transform: translate(0, 340px);
+    position: absolute;
+    left: 0;
+    bottom: -460px;
   }
 </style>
