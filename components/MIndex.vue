@@ -18,11 +18,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 18vw;
-    margin-bottom: 7vw;
-
     z-index: 9;
-    @include notsp {
+
+    @include pc {
+      margin-top: calc(7vw + 60px);
+      margin-bottom: 80px;
+    }
+    @include notpc {
+      margin-top: calc(21vw + 60px);
+      margin-bottom: 60px;
+
       margin-inline: 6%;
     }
   }

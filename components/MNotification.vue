@@ -23,8 +23,13 @@
 <style scoped lang="scss">
   .notifications {
     position: relative;
-    margin-bottom: 14vw;
     z-index: 9;
+    @include pc {
+      margin-bottom: 160px;
+    }
+    @include notpc {
+      margin-bottom: 120px;
+    }
   }
   h2 {
     &::after {
