@@ -31,7 +31,6 @@
 
   h1 {
     width: max-content;
-    margin: 0 auto 14vw auto;
     font-family: futura-pt, dnp-shuei-gothic-kin-std, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -40,9 +39,15 @@
     text-shadow: 0px 5px 5px rgba($black, 0.15);
     @include pc {
       font-size: 70px;
+      margin: 0 auto 14vw auto;
     }
-    @include notpc {
-      font-size: 30px;
+    @include tab {
+      font-size: 45px;
+      margin: 0 auto 30vw auto;
+    }
+    @include sp {
+      font-size: 25px;
+      margin: 0 auto 30vw auto;
     }
   }
 </style>

@@ -55,77 +55,156 @@
       }
     }
     &-t {
-      &-l {
-        top: 0;
-        left: 0;
-        &-1 {
-          width: 30vw;
-          height: 7vw;
+      @include pc {
+        &-l {
+          top: 0;
+          left: 0;
+          &-1 {
+            width: 30vw;
+            height: 7vw;
+          }
+          &-2 {
+            width: 15vw;
+            height: 4vw;
+          }
         }
-        &-2 {
-          width: 15vw;
-          height: 4vw;
+        &-r {
+          top: 0;
+          right: 30vw;
+          &-1 {
+            width: 10vw;
+            height: 7vw;
+          }
+          &-2 {
+            margin-left: auto;
+            width: 5vw;
+            height: 12vw;
+          }
         }
       }
-      &-r {
-        top: 0;
-        right: 30vw;
-        &-1 {
-          width: 10vw;
-          height: 7vw;
+      @include notpc {
+        &-l {
+          top: 0;
+          left: 0;
+          &-1 {
+            width: 40vw;
+            height: 14vw;
+          }
+          &-2 {
+            width: 20vw;
+            height: 8vw;
+          }
         }
-        &-2 {
-          margin-left: auto;
-          width: 5vw;
-          height: 12vw;
+        &-r {
+          top: 0;
+          right: 20vw;
+          &-1 {
+            width: 10vw;
+            height: 14vw;
+          }
+          &-2 {
+            margin-left: auto;
+            width: 5vw;
+            height: 24vw;
+          }
         }
       }
     }
     &-m {
       position: absolute;
-      top: max(8vw, min(18vw, 100svh - 80px - 47vw));
-      &-l {
-        top: 36vw;
-        left: 0;
-        &-1 {
-          width: 10vw;
-          height: 6vw;
-        }
-        &-2 {
-          width: 8vw;
-          height: 8vw;
-        }
-      }
-      &-r {
-        top: 28vw;
-        right: 0;
-        &-1 {
-          width: 32vw;
-          height: 6vw;
-          margin-left: auto;
-        }
-        &-2 {
-          width: 50vw;
-          height: 8vw;
-          margin-left: auto;
-        }
-        &-3 {
-          width: 28vw;
-          height: 8vw;
-          margin-left: auto;
-        }
-        &-4 {
-          width: 12vw;
-          height: 2vw;
-          margin-left: auto;
-        }
-        &-b {
-          top: 0;
-          right: 0;
+      @include pc {
+        top: max(8vw, min(18vw, 100svh - $header_height - 47vw));
+        &-l {
+          top: 36vw;
+          left: 0;
           &-1 {
             width: 10vw;
-            height: 40vw;
+            height: 6vw;
+          }
+          &-2 {
+            width: 8vw;
+            height: 8vw;
+          }
+        }
+        &-r {
+          top: 28vw;
+          right: 0;
+          &-1 {
+            width: 32vw;
+            height: 6vw;
             margin-left: auto;
+          }
+          &-2 {
+            width: 50vw;
+            height: 8vw;
+            margin-left: auto;
+          }
+          &-3 {
+            width: 28vw;
+            height: 8vw;
+            margin-left: auto;
+          }
+          &-4 {
+            width: 12vw;
+            height: 2vw;
+            margin-left: auto;
+          }
+          &-b {
+            top: 0;
+            right: 0;
+            &-1 {
+              width: 10vw;
+              height: 40vw;
+              margin-left: auto;
+            }
+          }
+        }
+      }
+      @include notpc {
+        top: max(-10vw, 100svh - $header_height - 85vw);
+        &-l {
+          top: 75vw;
+          left: 0;
+          &-1 {
+            width: 20vw;
+            height: 12vw;
+          }
+          &-2 {
+            width: 16vw;
+            height: 16vw;
+          }
+        }
+        &-r {
+          top: 60vw;
+          right: 0;
+          &-1 {
+            width: 32vw;
+            height: 12vw;
+            margin-left: auto;
+          }
+          &-2 {
+            width: 50vw;
+            height: 16vw;
+            margin-left: auto;
+          }
+          &-3 {
+            width: 28vw;
+            height: 16vw;
+            margin-left: auto;
+          }
+          &-4 {
+            width: 12vw;
+            height: 4vw;
+            margin-left: auto;
+          }
+          &-b {
+            top: 0;
+            right: 0;
+            &-1 {
+              width: 10vw;
+              height: 80vw;
+              margin-left: auto;
+            }
           }
         }
       }
@@ -133,35 +212,70 @@
     &-b {
       position: absolute;
       bottom: 0;
-      &-l {
-        bottom: 0;
-        left: 0;
-        &-1 {
-          width: 7vw;
-          height: 3.5vw;
+      @include pc {
+        &-l {
+          bottom: 0;
+          left: 0;
+          &-1 {
+            width: 7vw;
+            height: 3.5vw;
+          }
+          &-2 {
+            width: 18vw;
+            height: 2.5vw;
+          }
+          &-3 {
+            width: 25vw;
+            height: 3vw;
+          }
         }
-        &-2 {
-          width: 18vw;
-          height: 2.5vw;
-        }
-        &-3 {
-          width: 25vw;
-          height: 3vw;
+        &-r {
+          > .box {
+            margin-left: auto;
+          }
+          bottom: 0;
+          right: 0;
+          &-1 {
+            width: 7vw;
+            height: 3.5vw;
+          }
+          &-2 {
+            width: 25vw;
+            height: 3.5vw;
+          }
         }
       }
-      &-r {
-        > .box {
-          margin-left: auto;
+      @include notpc {
+        &-l {
+          bottom: 0;
+          left: 0;
+          &-1 {
+            width: 7vw;
+            height: 7vw;
+          }
+          &-2 {
+            width: 18vw;
+            height: 5vw;
+          }
+          &-3 {
+            width: 25vw;
+            height: 6vw;
+          }
         }
-        bottom: 0;
-        right: 0;
-        &-1 {
-          width: 7vw;
-          height: 3.5vw;
-        }
-        &-2 {
-          width: 25vw;
-          height: 3.5vw;
+        &-r {
+          > .box {
+            margin-left: auto;
+          }
+          bottom: 0;
+          right: 0;
+          &-1 {
+            width: 7vw;
+            height: 7vw;
+          }
+          &-2 {
+            width: 25vw;
+            height: 7vw;
+          }
         }
       }
     }

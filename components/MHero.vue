@@ -19,7 +19,13 @@
 
 <style scoped lang="scss">
   .hero {
-    height: max(50vw, min(70vw, 100svh - 80px + 5vw));
+    @include pc {
+      // height: max(50vw, min(70vw, 100svh - $header_height + 5vw));
+      height: max(60vw, min(70vw, 100svh - $header_height + 5vw));
+    }
+    @include notpc {
+      height: max(98vw, 100svh - $header_height + 23vw);
+    }
   }
   .slogan {
     display: flex;
@@ -27,11 +33,8 @@
     align-items: flex-start;
     position: absolute;
     z-index: 11;
-    top: max(7vw, min(17vw, 100svh - 80px - 48vw));
-    right: 16vw;
     > div {
       position: relative;
-      width: 13vw;
       &.slogan-1 {
         animation: slogan-1 1s ease-out 2.5s both;
       }
@@ -45,20 +48,45 @@
         }
       }
     }
-    > .slogan-2 {
-      margin-top: 13vw;
+    @include pc {
+      right: 16vw;
+
+      top: max(7vw, min(17vw, 100svh - $header_height - 48vw));
+      > div {
+        width: 13vw;
+      }
+      > .slogan-2 {
+        margin-top: 13vw;
+      }
+    }
+    @include tab {
+      right: 10vw;
+      top: max(-5vw, 100svh - $header_height - 80vw);
+      > div {
+        width: 22vw;
+      }
+
+      > .slogan-2 {
+        margin-top: 22vw;
+      }
+    }
+    @include sp {
+      right: 7vw;
+      top: max(5vw, 100svh - $header_height - 70vw);
+      > div {
+        width: 25vw;
+      }
+
+      > .slogan-2 {
+        margin-top: 12vw;
+      }
     }
   }
   .scroll-box {
     position: absolute;
-    top: max(45.5vw, min(55.5vw, 100svh - 80px - 9.5vw));
     z-index: 10;
-    left: 25vw;
-    width: 3vw;
-    height: 3vw;
     transform-origin: center;
     opacity: 1;
-    border: 1.5px solid $white;
     box-sizing: border-box;
     animation: scroll-box 1s ease-out 4.5s both;
     &::before {
@@ -67,8 +95,6 @@
       position: absolute;
       width: 50%;
       height: 50%;
-      border-right: 4px solid $white;
-      border-bottom: 4px solid $white;
       box-sizing: border-box;
       transform-origin: bottom right;
       transform: translate(0, 50%) rotate(45deg);
@@ -79,14 +105,45 @@
     &::after {
       content: "";
       display: block;
-      margin-left: 4.2vw;
-      height: calc(3vw - 3px);
-      width: 7vw;
       transform-origin: center;
       background-image: url("@/assets/images/scroll.svg");
       background-position: center;
       background-repeat: no-repeat;
       animation: scroll-box 1s ease-out 4.5s both;
+    }
+    @include pc {
+      width: 3vw;
+      height: 3vw;
+      left: 25vw;
+      top: max(45.5vw, min(55.5vw, 100svh - $header_height - 9.5vw));
+      border: 0.12vw solid $white;
+      &::before {
+        border-right: 0.3vw solid $white;
+        border-bottom: 0.3vw solid $white;
+      }
+      &::after {
+        margin-left: 4.2vw;
+        height: 2.76vw;
+        width: 7vw;
+      }
+    }
+    @include notpc {
+      width: 8vw;
+      height: 8vw;
+      left: 30vw;
+      top: max(65vw, 100svh - $header_height - 10vw);
+      border: 0.3vw solid $white;
+      &::before {
+        border-right: 0.8vw solid $white;
+        border-bottom: 0.8vw solid $white;
+      }
+      &:after {
+        position: absolute;
+        top: -8vw;
+        left: -3vw;
+        height: 8vw;
+        width: 14vw;
+      }
     }
   }
 
