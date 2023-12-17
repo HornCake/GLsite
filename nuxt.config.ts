@@ -13,6 +13,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      title: "GL Competition 2023",
       meta: [
         { name: "title", content: "GL Competition 2023" },
         { property: "og:title", content: "GL Competition 2023" },

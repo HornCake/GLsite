@@ -5,6 +5,7 @@
       <NuxtPage />
       <ATopScrollButtton />
     </main>
+    <OFooter />
   </div>
 </template>
 
