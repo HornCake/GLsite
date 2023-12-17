@@ -1,5 +1,5 @@
 <template>
-  <div class="deco2" :class="{ 'v-flip': vflip, 'h-flip': hflip }">
+  <div class="deco" :class="{ 'v-flip': vflip, 'h-flip': hflip }">
     <div class="cross-line"></div>
     <div class="boxes">
       <div class="box box-2-1"></div>
@@ -19,7 +19,7 @@
 </script>
 
 <style scoped lang="scss">
-  .deco2 {
+  .deco {
     position: absolute;
     width: 300px;
     height: 320px;
@@ -30,20 +30,20 @@
       display: none;
     }
     &:not(.v-flip):not(.h-flip) {
-      transform: translate(0, -330px);
+      transform: translate(0, -340px);
       left: min(0px, max(min(20%, 50% - 350px), 50% - 500px) - 350px);
     }
     &.v-flip.h-flip {
-      transform: translate(0, -330px) scale(-1, -1);
+      transform: translate(0, -340px) scale(-1, -1);
       right: min(0px, max(min(20%, 50% - 350px), 50% - 500px) - 350px);
     }
     &:not(.v-flip).h-flip {
-      transform: translate(0, -330px) scale(1, -1);
-      left: min(0px, max(min(20%, 50% - 350px), 50% - 500px) - 350px);
+      transform: translate(0, -340px) scale(-1, 1);
+      right: min(0px, max(min(20%, 50% - 350px), 50% - 500px) - 350px);
     }
     &:not(.h-flip).v-flip {
-      transform: translate(0, -330px) scale(-1, 1);
-      right: min(0px, max(min(20%, 50% - 350px), 50% - 500px) - 350px);
+      transform: translate(0, -340px) scale(1, -1);
+      left: min(0px, max(min(20%, 50% - 350px), 50% - 500px) - 350px);
     }
   }
   .cross-line {
