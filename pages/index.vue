@@ -6,10 +6,10 @@
     <ADecoration1 />
     <OSubmissions />
     <OJudges />
-    <ADecoration2 vflip />
+    <ADecoration2 hflip />
     <OAboutJudge />
     <OPrizes />
-    <ADecoration2 hflip />
+    <ADecoration2 vflip />
     <OCautions />
     <OEntry />
     <ADecoration1 vflip hflip />
