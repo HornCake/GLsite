@@ -23,6 +23,7 @@
     @include pc {
       margin-top: calc(7vw + 60px);
       margin-bottom: 80px;
+      margin-inline: max(min(6%, 50% - 350px), 50% - 600px);
     }
     @include notpc {
       margin-top: calc(21vw + 60px);

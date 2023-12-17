@@ -71,6 +71,7 @@
     transform: translate(10px, 10px) rotate(45deg);
   }
   .text {
+    font-family: futura-pt, dnp-shuei-gothic-kin-std, sans-serif;
     width: 100%;
     text-align: center;
     color: $black;
