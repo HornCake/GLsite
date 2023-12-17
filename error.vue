@@ -10,7 +10,7 @@
               <div class="cross-line cross-line-2"></div>
             </div>
             <div class="error">ERROR</div>
-            <NuxtLink href="/" class="button">トップへ</NuxtLink>
+            <NuxtLink href="/" class="button">トップに戻る</NuxtLink>
           </div>
           <div class="boxes">
             <div class="box box-1"></div>

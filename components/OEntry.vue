@@ -4,7 +4,7 @@
     <section>
       <p><NuxtLink to="/" @click="onClick">応募要項</NuxtLink>をご確認の上、下のボタンよりエントリーフォームを記入してください。</p>
 
-      <a class="button" href="https://www.instagram.com/_groundlevel_/" target="_blank" rel="noopener noreferrer">
+      <a class="button" href="https://forms.gle/bad2nVtmEN2JsUZu6" target="_blank" rel="noopener noreferrer">
         <div class="text">応募する</div>
       </a>
     </section>

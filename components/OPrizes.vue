@@ -20,7 +20,7 @@
 <script setup lang="ts">
   const prizes = [
     { name: "最優秀賞", money: "10", limit: 1 },
-    { name: "優秀賞", money: "5", limit: 3 },
+    { name: "優秀賞", money: "3", limit: 3 },
     { name: "佳作", money: "1", limit: 5 },
   ];
 </script>

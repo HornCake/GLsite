@@ -1,8 +1,9 @@
 <template>
-  <section>
+  <section class="no-line">
     <AScrollAnchorHeading text="協賛" />
     <section class="imgs">
-      <div class="img" v-for="i in 4" :key="i"></div>
+      <p>順次公開予定</p>
+      <!-- <div class="img" v-for="i in 4" :key="i"></div> -->
     </section>
   </section>
 </template>

@@ -11,6 +11,10 @@
         建築・建設業界を、そして私たち一人一人の人生を、ひとつの建築物と見立てた時、私たちは今まさにGround Levelに立っています。 ここから、あなたの思い描く未来を建築していきましょう。
       </p>
       <p>代表：圓道龍一</p>
+
+      <NuxtLink class="button" to="/">
+        <div class="text">トップページに戻る</div>
+      </NuxtLink>
     </section>
     <ADecoration2 class="deco-2" vflip />
   </article>
@@ -65,5 +69,82 @@
     position: absolute;
     left: 0;
     bottom: -460px;
+  }
+
+  .button {
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    display: grid;
+    @include pc {
+      width: 220px;
+      height: 60px;
+      margin: 80px auto 50px auto;
+      grid-template:
+        ". . ." 1fr
+        ". text ." auto
+        ". . ." 1fr
+        "u u u" 3px/
+        1fr auto 1fr;
+    }
+    @include notpc {
+      width: 180px;
+      height: 50px;
+      margin: 50px auto 30px auto;
+      grid-template:
+        ". . ." 1fr
+        ". text ." auto
+        ". . ." 1fr
+        "u u u" 2px/
+        1fr auto 1fr;
+    }
+    &::after {
+      z-index: 1;
+      grid-area: u;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: $black;
+      transform-origin: bottom center;
+
+      transition: transform 0.4s 0.2s;
+    }
+    > .text {
+      z-index: 2;
+      grid-area: text;
+      line-height: 24px;
+      color: $text_black;
+      transform-origin: center center;
+
+      transition:
+        transform 0.4s,
+        color 0.4s;
+      font-family: hiragino-kaku-gothic-pron, sans-serif;
+      font-weight: 300;
+      @include pc {
+        font-size: 22px;
+      }
+      @include notpc {
+        font-size: 18px;
+      }
+    }
+    &:hover {
+      &::after {
+        @include pc {
+          transform: scale(1, 20);
+        }
+        @include notpc {
+          transform: scale(1, 25);
+        }
+        transition: transform 0.4s;
+      }
+      > .text {
+        color: $sub;
+        transform: scale(1.05);
+        transition:
+          transform 0.4s 0.2s,
+          color 0.4s 0.2s;
+      }
+    }
   }
 </style>
