@@ -16,7 +16,7 @@ export default defineNuxtConfig({
       title: "GL コンペティション 2023",
       meta: [
         { name: "title", content: "GL コンペティション 2023" },
-        { property: "og:site:name", content: "GL コンペティション 2023" },
+        { property: "og:site_name", content: "GL コンペティション 2023" },
         { property: "og:title", content: "GL コンペティション 2023" },
         { property: "og:description", content: "GL コンペティション 2023の公式ウェブサイトです" },
         { property: "og:image", content: "https://www.gl-competition.net/ogp.png" },
