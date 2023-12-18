@@ -7,7 +7,7 @@
         <a class="ig-logo media-icon" href="https://www.instagram.com/glcompetition2023/" target="_blank" rel="noopener noreferrer"></a>
         <a class="x-logo media-icon" href="https://twitter.com/ground_level_" target="_blank" rel="noopener noreferrer"></a>
       </div>
-      <NuxtLink class="about-us only-sp" to="/about-us">団体について</NuxtLink>
+      <NuxtLink class="about-us only-sp" to="/about-us" @click="onClickAboutUs">団体について</NuxtLink>
     </div>
   </nav>
 </template>
@@ -25,6 +25,11 @@
 
   const onClick = (str: string) => {
     scrollToEle(str);
+    if (window.innerWidth <= 600) {
+      emits("close");
+    }
+  };
+  const onClickAboutUs = () => {
     if (window.innerWidth <= 600) {
       emits("close");
     }
