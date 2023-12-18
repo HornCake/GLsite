@@ -12,7 +12,6 @@
         </div>
       </div>
       <p class="note">審査委員の判断で上記賞金金額の配分を変える場合があります。</p>
-      <p class="note">金額はすべて税込み。</p>
     </section>
   </section>
 </template>
