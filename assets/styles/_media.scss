@@ -1,5 +1,5 @@
 $bp-sp-tab: 600px;
-$bp-tab-pc: 810px;
+$bp-tab-pc: 820px;
 @mixin pc {
   @media (min-width: ($bp-tab-pc + 0.02px)) {
     @content;
