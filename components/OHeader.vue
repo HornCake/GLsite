@@ -8,7 +8,7 @@
       </NuxtLink>
       <div>
         <NuxtLink class="about-us no-sp" to="/about-us">団体について</NuxtLink>
-        <a class="ig-logo media-icon no-sp" href="https://www.instagram.com/_groundlevel_/" target="_blank" rel="noopener noreferrer"></a>
+        <a class="ig-logo media-icon no-sp" href="https://www.instagram.com/glcompetition2023/" target="_blank" rel="noopener noreferrer"></a>
         <a class="x-logo media-icon no-sp" href="https://twitter.com/ground_level_" target="_blank" rel="noopener noreferrer"></a>
         <AHamburgerButton @click="toggle()" :active="menuActive" />
       </div>
