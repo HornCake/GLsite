@@ -3,9 +3,9 @@
     <AScrollAnchorHeading text="SNSアカウント" />
     <section>
       <div class="icons">
-        <a class="media-icon" href="https://www.instagram.com/_groundlevel_/" target="_blank" rel="noopener noreferrer">
+        <a class="media-icon" href="https://www.instagram.com/glcompetition2023/" target="_blank" rel="noopener noreferrer">
           <img src="@/assets/images/ig_logo.svg" alt="Instagram" />
-          <p>@_groundlevel_</p>
+          <p>@glcompetition2023</p>
         </a>
         <a class="media-icon" href="https://twitter.com/ground_level_" target="_blank" rel="noopener noreferrer">
           <img src="@/assets/images/x_logo.svg" alt="Instagram" />
