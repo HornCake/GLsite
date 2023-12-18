@@ -18,13 +18,16 @@
         </p>
         <h3>日程</h3>
         <p>
-          公開二次審査日時：<span class="no-pc"><br /></span>2024年3月12日 13:00~17:00予定
+          公開二次審査日時：<span class="no-pc"><br /></span>2024年3月12日(火) 12:30~17:00
         </p>
         <p>
-          授賞式：<span class="no-pc"><br /></span>公開二次審査と同日 17:15~17:45予定
+          授賞式：<span class="no-pc"><br /></span>2024年3月12日(火) 17:15~17:45
         </p>
         <p>
-          懇親会：<span class="no-pc"><br /></span>公開二次審査と同日 18:00~20:00予定
+          懇親会：<span class="no-pc"><br /></span>2024年3月12日(火) 18:00~20:00
+        </p>
+        <p>
+          会場：<span class="no-pc"><br /></span>代官山ヒルサイドテラス HILLSIDE PLAZA 東急東横線［代官山駅］下車 徒歩3分
         </p>
       </template>
     </MTabContent>
