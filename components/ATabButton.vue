@@ -41,9 +41,9 @@
       width: 100%;
       height: 100%;
       transform-origin: top center;
-      transform: scale(0, 1);
       background-color: $black;
-      transition: transform 0.3s;
+      opacity: 0;
+      transition: opacity 0.3s;
     }
     > .text {
       grid-area: text;
@@ -63,7 +63,7 @@
     }
     &.is-active {
       &::after {
-        transform: scale(1);
+        opacity: 1;
       }
       > .text {
         transform: translate(0, -3px) scale(1);
