@@ -11,7 +11,10 @@
         <p class="note">提出物に個人やグループ、大学など個人が特定できることを含めないでください。</p>
       </template>
       <template #second>
-        <p>下記の項目に従い、郵送の場合、必着で、公開二次審査会場(HILLSIDE PLAZA)の住所まで送付してください。当日会場に持ち込む場合は公開二次審査当日(3月12日)に、作品を持って会場に来てください。基本的には当日持参するようにお願いします。</p>
+        <p>
+          下記の項目に従い、郵送の場合、必着で、公開二次審査会場(HILLSIDE PLAZA、詳細は「<NuxtLink to="/" @click="onClick">審査について</NuxtLink
+          >」)の住所まで送付してください。当日会場に持ち込む場合は公開二次審査当日(3月12日)に、作品を持って会場に来てください。基本的には当日持参するようにお願いします。
+        </p>
         <ul>
           <li>420mm×594mm(JIS規格A2)の紙1枚以上のプレゼンテーションボード。</li>
           <li>底面を594mm×841mm(JIS規格A1)の模型。</li>
@@ -22,6 +25,10 @@
   </section>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  const onClick = () => {
+    scrollToEle("審査について");
+  };
+</script>
 
 <style scoped lang="scss"></style>
