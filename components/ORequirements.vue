@@ -29,6 +29,9 @@
         2024年1月1日に送られるエスキースの日程調査に同年1月7日までに回答し、その後、同年1月14日までに送られるエスキース日程を確認してください。指定された日時に事前に送られたZOOMのURLからZOOMに参加することで、エスキースを受けることができます。
       </p>
     </section>
+    <section>
+      <p class="download"><a href="@/assets/files/GLcompe2023応募要項_20231219.pdf" download="GLコンペティション2023 応募要項">応募要項をダウンロード</a></p>
+    </section>
   </section>
 </template>
 
@@ -43,5 +46,9 @@
     @include pc {
       display: none;
     }
+  }
+  .download {
+    text-align: center;
+    margin-top: 2em;
   }
 </style>
