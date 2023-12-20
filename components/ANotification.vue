@@ -34,7 +34,7 @@
       margin-bottom: 45px;
     }
     @include sp {
-      font-size: 12px;
+      font-size: 10px;
       margin-bottom: 30px;
     }
     &::after {
@@ -86,7 +86,7 @@
   .content {
     position: relative;
     width: 90%;
-    margin-left: 10%;
+    margin-left: 5%;
     grid-area: content;
     // line-height: 45px;
     &::after {
