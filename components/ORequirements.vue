@@ -30,7 +30,7 @@
       </p>
     </section>
     <section>
-      <p class="download"><a href="@/assets/files/GLcompe2023応募要項_20231219.pdf" download="GLコンペティション2023 応募要項">応募要項をダウンロード</a></p>
+      <p class="download"><a :href="ret['GLcompe2023応募要項_20231219.pdf']" target="_blank" rel="noopener noreferrer">応募要項をダウンロード</a></p>
     </section>
   </section>
 </template>
@@ -39,6 +39,13 @@
   const onClick = () => {
     scrollToEle("応募");
   };
+  const files = import.meta.glob("../assets/files/*", { eager: true });
+
+  const ret: Record<string, string> = {};
+
+  for (const key in files) {
+    ret[key.replace("../assets/files/", "")] = files[key].default as string;
+  }
 </script>
 
 <style scoped lang="scss">
