@@ -6,6 +6,8 @@
 
       <a class="button" href="https://forms.gle/bad2nVtmEN2JsUZu6" target="_blank" rel="noopener noreferrer">
         <div class="text">応募する</div>
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
       </a>
     </section>
   </section>
@@ -29,7 +31,7 @@
     @include pc {
       width: 180px;
       height: 60px;
-      margin: 80px auto 50px auto;
+      margin: 140px auto 50px auto;
       grid-template:
         ". . ." 1fr
         ". text ." auto
@@ -40,7 +42,7 @@
     @include notpc {
       width: 140px;
       height: 50px;
-      margin: 50px auto 30px auto;
+      margin: 90px auto 30px auto;
       grid-template:
         ". . ." 1fr
         ". text ." auto
@@ -63,7 +65,7 @@
       z-index: 2;
       grid-area: text;
       line-height: 24px;
-      color: $text_black;
+      color: $text_yellow;
       transform-origin: center center;
 
       transition:
@@ -76,6 +78,37 @@
       }
       @include notpc {
         font-size: 25px;
+      }
+    }
+    > .line {
+      position: absolute;
+      @include pc {
+        &-1 {
+          border-block: 1px solid $black;
+          width: calc(100% + 100px);
+          height: calc(100% + 60px);
+          transform: translate(-50px, -30px);
+        }
+        &-2 {
+          border-inline: 1px solid $black;
+          width: calc(100% + 60px);
+          height: calc(100% + 100px);
+          transform: translate(-30px, -50px);
+        }
+      }
+      @include notpc {
+        &-1 {
+          border-block: 0.5px solid $black;
+          width: calc(100% + 80px);
+          height: calc(100% + 50px);
+          transform: translate(-40px, -20px);
+        }
+        &-2 {
+          border-inline: 0.5px solid $black;
+          width: calc(100% + 50px);
+          height: calc(100% + 80px);
+          transform: translate(-25px, -35px);
+        }
       }
     }
     &:hover {
